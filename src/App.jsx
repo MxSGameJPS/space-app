@@ -1,5 +1,5 @@
 import { styled } from "styled-components"
-import EstilosGlobais from "./componentes/EstilosGlobais"
+import EstilosGlobais from "./Componentes/EstilosGlobais"
 import Cabecalho from "./componentes/Cabecalho"
 import BarraLateral from "./componentes/BarraLateral"
 import Banner from "./componentes/Banner"
