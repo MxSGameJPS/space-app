@@ -38,9 +38,9 @@ const Div = styled.div`
 const Tags = ({setTag}) => {
     return <TagsContainer>
         <TagTitulo>Busque por tags:</TagTitulo>
-        <div>
+        <Div>
             {tags.map(tag => <Tag key={tag.id} onClick={() => setTag(tag.tag)}>{tag.titulo}</Tag>)}
-        </div>
+        </Div>
     </TagsContainer>
 }
 
