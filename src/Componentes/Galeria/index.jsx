@@ -1,34 +1,44 @@
-import styled from "styled-components";
-import Titulo from "../Titulo";
-import Populares from "./Populares";
-import Tags from "./Tags";
+import { styled } from "styled-components"
+import Titulo from "../Titulo"
+import Tags from "./Tags"
+import Populares from "./Populares"
+import Imagem from "./Imagem"
 
-const GaleriaConteiner = styled.div`
+const GaleriaContainer = styled.div`
     display: flex;
-`;
+    gap: 24px;
+`
 
 const SecaoFluida = styled.section`
     flex-grow: 1;
-`;
+`
 
+const ImagensContainer = styled.section`
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+`
 
-
-const Galeria = ({fotos = []}) => {
+const Galeria = ({ fotos = [], aoFotoSelecionada }) => {
     return (
         <>
-            <Tags/> 
-            <GaleriaConteiner>
+            <Tags />
+            <GaleriaContainer>
                 <SecaoFluida>
                     <Titulo>Navegue pela galeria</Titulo>
-                    <ul>
-                    {fotos.map(foto =><li>{foto.titulo}</li> ) }
-                    </ul>
+                    <ImagensContainer>
+                        {fotos.map(foto => <Imagem
+                            aoZoomSolicitado={aoFotoSelecionada} 
+                            key={foto.id} 
+                            foto={foto} />)
+                        }
+                    </ImagensContainer>
                 </SecaoFluida>
-                <Populares/>    
-
-            </GaleriaConteiner>
+                <Populares />
+            </GaleriaContainer>
         </>
-        );
+    )
 }
 
-export default Galeria;
+export default Galeria
