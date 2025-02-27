@@ -1,14 +1,14 @@
 import { styled } from "styled-components"
 import EstilosGlobais from "./Componentes/EstilosGlobais"
 import Cabecalho from "./Componentes/Cabecalho"
-import BarraLateral from "./componentes/BarraLateral"
-import Banner from "./componentes/Banner"
+import BarraLateral from "./Componentes/BarraLateral"
+import Banner from "./Componentes/Banner"
 import bannerBackground from './assets/banner.png'
-import Galeria from "./componentes/Galeria"
+import Galeria from "./Componentes/Galeria"
 
 import fotos from './fotos.json'
 import { useEffect, useState } from "react"
-import ModalZoom from "./componentes/ModalZoom"
+import ModalZoom from "./Componentes/ModalZoom"
 import Rodape from "./Componentes/Rodape"
 
 const FundoGradiente = styled.div`
