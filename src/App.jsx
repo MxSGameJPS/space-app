@@ -1,6 +1,6 @@
 import { styled } from "styled-components"
 import EstilosGlobais from "./Componentes/EstilosGlobais"
-import Cabecalho from "./componentes/Cabecalho"
+import Cabecalho from "./Componentes/Cabecalho"
 import BarraLateral from "./componentes/BarraLateral"
 import Banner from "./componentes/Banner"
 import bannerBackground from './assets/banner.png'
